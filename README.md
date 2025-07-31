@@ -1,4 +1,19 @@
-https://github.com/Cheperla/Tienda-Marioneta.git
+https://gconst carrito = [];
+
+function agregarAlCarrito(producto) {
+  carrito.push(producto);
+  mostrarCarrito();
+}
+
+function mostrarCarrito() {
+  const lista = document.getElementById("lista-carrito");
+  lista.innerHTML = "";
+  carrito.forEach((item, index) => {
+    const li = document.createElement("li");
+    li.textContent = item;
+    lista.appendChild(li);
+  });
+}ithub.com/Cheperla/Tienda-Marioneta.git
 body {
   font-family: sans-serif;
   margin: 0;
